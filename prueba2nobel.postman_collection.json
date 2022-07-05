@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "61537cc9-2c5a-4d1d-88a9-1179032ab1ec",
+		"name": "prueba2nobel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21757133"
+	},
+	"item": [
+		{
+			"name": "modificarput",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": 1,\r\n        \"name\": \"Aurora1\",\r\n        \"lastName\": \"Zbrinden1\",\r\n        \"age\": 2,\r\n        \"gender\": \"Femenina1\",\r\n        \"email\": \"barbara1@barbara1.cl\"\r\n    },",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IngresarPost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": 1,\r\n        \"name\": \"Aurora1\",\r\n        \"lastName\": \"Zbrinden1\",\r\n        \"age\": 2,\r\n        \"gender\": \"Femenina1\",\r\n        \"email\": \"barbara1@barbara1.cl\"\r\n    },",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MostrarGet",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"name\": \"Aurora1\",\r\n        \"lastName\": \"Zbrinden1\",\r\n        \"age\": 2,\r\n        \"gender\": \"Femenina1\",\r\n        \"email\": \"barbara1@barbara1.cl\"\r\n    },",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/getUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"getUser"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
